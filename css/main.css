@@ -1,0 +1,292 @@
+/*set background image per page*/
+.global-bg,
+starters-bg,
+mains-bg,
+desserts-bg {
+    height: 1600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.global-bg {
+    background-image: url("../images/thebgs/bg-global.jpg");
+}
+
+.starters-bg {
+    background-image: url("../images/thebgs/bg-starters.jpg");
+}
+
+.mains-bg {
+    background-image: url("../images/thebgs/bg-mains.jpg");
+}
+
+.desserts-bg {
+    background-image: url("../images/thebgs/bg-dessert.jpg");
+}
+
+/*finish setting background image for each page*/
+
+/*sets the three homepage images to responsive for demonstration*/
+.responsive {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/*set up all text,and list in how to make*/
+#introduction,
+ul,
+ol {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left: 15px;
+    margin-top: 100px;
+    color: #413c58;
+}
+
+/*chef for homepage*/
+#chef {
+    float: right;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 1px;
+}
+
+/*limits canvas area to 960px*/
+.wrapper {
+    background: #fff;
+    max-width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px
+}
+
+/*clears the wrapper so content can follow document load*/
+.wrapper:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*sets up the navigation styles for the 'menu'*/
+#menu ul {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    width: 425px;
+}
+
+#menu li {
+    float: left;
+    padding-left: 6px;
+}
+
+#menu li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#menu li a:hover:not(.current) {
+    background-color: #eeeeee;
+}
+
+#menu li a.navselected {
+    color: #2c2c2c;
+    background-color: #caf0f8;
+}
+
+/*ends navigation styles*/
+
+/*sets the yummy yum yum branding*/
+#brand h1,
+h2 {
+    display: block;
+    clear: both;
+    margin: 2px;
+}
+
+/*sets h1 yummy yum yum text branding*/
+#brand h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 60px;
+    font-weight: 400;
+    float: right;
+    font-weight: normal;
+    display: block;
+}
+
+/*sets h2 for yummy strapline*/
+#brand h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    float: right;
+    font-weight: normal;
+    display: block;
+    margin-bottom: 15px;
+    color: #a39ba8;
+}
+
+/*sets h3 for Today's recommendations*/
+#recommendation h3 {
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    color: #413c58;
+}
+
+/*sets the anchor decorations*/
+a {
+    text-decoration: none;
+    color: #413c58;
+}
+
+/*recipe card main structure*/
+.recipeCard {
+    float: left;
+    width: 27%;
+    margin: 1%;
+    padding: 2%;
+    height: 25%;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    background: #e7efc5;
+}
+
+/*recipe card course type for homepage and grid pages*/
+.courseType {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: -12px;
+    color: #413c58;
+}
+
+.recipeCard .courseTitle {
+    font-family: 'Lora', serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #413c58;
+}
+
+/*recipe card description for homepage and grid pages*/
+.recipeCard .courseDescription {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #413c58;
+}
+
+/*sets up styles for how to make starter, main and dessert*/
+/*receipe title*/
+#courseTitle {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #413c58;
+}
+
+/*set up headers in how to make starter, main and dessert*/
+#courseDescriptionHeader,
+#courseIngredientsHeader,
+#courseInstructionsHeader {
+    font-family: 'Lora', serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: #413c58;
+}
+
+/*set up all text, and list in how to make starter, main and dessert*/
+p.descriptiveText,
+ul,
+ol {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: -10px;
+    color: #413c58;
+}
+
+/*set up small text for prep, cook, ready in how to make starter, main and dessert*/
+p.prep {
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    margin-top: 6px;
+    margin-left: 4px;
+    margin-bottom: 20px;
+    color: #2c2c2c;
+}
+
+/*control the position of the main image in how to make starter, main and dessert */
+#courseImage {
+    float: right;
+    font-weight: normal;
+    padding-left: 5%;
+    padding-top: 1%;
+}
+
+/*footer styles for copyright and social links*/
+#footer {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    clear: both;
+}
+
+/*provides white space for the social buttons*/
+.socialClear {
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+/*provides white space for the social copyright text*/
+#copyright,
+p.copyright_text {
+    margin-left: 10px;
+}
+
+/*general styles*/
+/*sets simple horizontal rule style for recipe cards*/
+hr {
+    border: 1px solid #413c58;
+}
+
+/*sets simple horizontal rule style for how to make starter, main and dessert*/
+hr.dotted {
+    border: 1px dashed #d3d3d3;
+    width: 95%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/*sets global styles for images*/
+img {
+    border-radius: 8px;
+}
+
+/*remove the chrome broser border when clicking on elements*/
+a:focus {
+    outline: none;
+}
+
+/*end general styles*/
